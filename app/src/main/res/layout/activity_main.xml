@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+ <LinearLayout
+
+     android:padding="@dimen/padd_10"
+     android:layout_marginTop="@dimen/padd_10"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+  <ImageView
+      android:src="@drawable/location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"></ImageView>
+  <TextView
+      android:layout_marginLeft="5dp"
+      android:textStyle="bold"
+      android:text="Hyatabad,Peshawar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"></TextView>
+ </LinearLayout>
+ <com.victor.loading.rotate.RotateLoading
+     app:loading_color="#59DA5E"
+     android:id="@+id/rotation"
+     android:layout_width="80dp"
+     android:layout_centerInParent="true"
+     android:layout_height="80dp"></com.victor.loading.rotate.RotateLoading>
+
+
+
+
+
+
+ <RelativeLayout
+     android:id="@+id/mainLayout"
+     android:padding="@dimen/padd_10"
+     android:layout_centerInParent="true"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+ <TextView
+     android:paddingLeft="@dimen/padd_10"
+     android:id="@+id/label_username"
+     android:layout_marginLeft="@dimen/padd_10"
+     android:text="Username or Email"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"></TextView>
+  <LinearLayout
+      android:id="@+id/username_layout"
+      android:padding="5dp"
+      android:layout_below="@id/label_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+   <ImageView
+       android:layout_gravity="center"
+       android:padding="5dp"
+       android:layout_marginLeft="@dimen/padd_10"
+       android:src="@drawable/user_img"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"></ImageView>
+   <EditText
+
+       android:id="@+id/username"
+       android:layout_marginLeft="@dimen/padd_10"
+       android:hint="xxx@psra.org"
+       android:backgroundTint="@android:color/transparent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></EditText>
+  </LinearLayout>
+  <View
+      android:id="@+id/line_username"
+      android:layout_marginLeft="@dimen/padd_10"
+      android:layout_marginRight="@dimen/padd_10"
+
+      android:layout_below="@id/username_layout"
+      android:background="#E9E9EC"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"></View>
+  <TextView
+      android:layout_marginTop="10dp"
+      android:id="@+id/label_password"
+      android:padding="5dp"
+      android:layout_marginLeft="@dimen/padd_10"
+      android:text="Password"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/line_username"
+      android:layout_height="wrap_content"></TextView>
+
+  <LinearLayout
+      android:id="@+id/password_layout"
+
+      android:padding="5dp"
+      android:layout_below="@id/label_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+   <ImageView
+       android:layout_gravity="center"
+       android:padding="5dp"
+       android:layout_marginLeft="@dimen/padd_10"
+       android:src="@drawable/password_img"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"></ImageView>
+   <EditText
+
+       android:id="@+id/password"
+       android:inputType="textPassword"
+       android:layout_marginLeft="@dimen/padd_10"
+       android:hint="Password"
+       android:backgroundTint="@android:color/transparent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></EditText>
+  </LinearLayout>
+  <View
+      android:id="@+id/line_password"
+      android:layout_marginLeft="@dimen/padd_10"
+      android:layout_marginRight="@dimen/padd_10"
+
+      android:layout_below="@id/password_layout"
+      android:background="#E9E9EC"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"></View>
+
+ </RelativeLayout>
+
+ <TextView
+
+     android:gravity="center"
+     android:paddingLeft="@dimen/padd_10"
+     android:padding="@dimen/padd_10"
+     android:textSize="22dp"
+     android:textStyle="bold"
+     android:text="Let's Sign You In"
+     android:layout_above="@id/secondtitle"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"></TextView>
+ <TextView
+     android:gravity="center"
+     android:paddingLeft="@dimen/padd_10"
+     android:id="@+id/secondtitle"
+     android:layout_marginBottom="40dp"
+     android:text="Welcome Back You Have Been Missed"
+     android:layout_above="@id/mainLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"></TextView>
+ <LinearLayout
+
+     android:onClick="login"
+     android:layout_marginTop="30dp"
+     android:layout_below="@id/mainLayout"
+     android:weightSum="2"
+     android:gravity="center"
+     android:orientation="horizontal"
+     android:drawableRight="@drawable/arrow"
+     android:id="@+id/getstarted"
+
+     android:layout_marginBottom="20dp"
+     android:layout_centerHorizontal="true"
+     android:background="@drawable/buttonstyle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+  <TextView
+      android:layout_marginLeft="20dp"
+      android:layout_weight=".3"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:textColor="#ffffff"
+      android:text="Login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"></TextView>
+
+  <ImageView
+      android:layout_weight="1.7"
+      android:layout_marginRight="@dimen/page_border"
+      android:src="@drawable/arrow"
+      android:layout_gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"></ImageView>
+
+ </LinearLayout>
+
+</RelativeLayout>

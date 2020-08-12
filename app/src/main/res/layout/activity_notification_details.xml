@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NotificationDetails">
+    <RelativeLayout
+        android:background="@drawable/notification_details_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+<LinearLayout
+    android:weightSum="5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1.95"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1.5"
+                android:src="@drawable/notification_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:text="New Session Registration"
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1.65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_weight=".5"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/description"
+               android:text="@string/description"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></TextView>
+
+       </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2.05"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="image"
+            android:text="IMAGE"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shadow"
+            android:layout_height="match_parent"></Button>
+        <Button
+            android:onClick="pdf"
+            android:text="PDF"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_shadow"
+            android:layout_height="match_parent"></Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

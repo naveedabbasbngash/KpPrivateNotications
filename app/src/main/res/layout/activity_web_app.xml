@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.victor.loading.rotate.RotateLoading
+        app:loading_color="#59DA5E"
+        android:id="@+id/rotation"
+        android:layout_width="80dp"
+        android:layout_centerInParent="true"
+        android:layout_height="80dp"></com.victor.loading.rotate.RotateLoading>
+
+    <WebView
+        android:layout_above="@id/bottom_layout"
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></WebView>
+
+<LinearLayout
+
+    android:gravity="center"
+    android:padding="@dimen/padd_10"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:id="@+id/bottom_layout"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:onClick="inbox"
+        android:text="Inbox"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="@dimen/padd_10"
+        android:background="@drawable/button_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:onClick="logout"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="@dimen/padd_10"
+        android:background="@drawable/button_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.NotificationActivity"
+    >
+
+    <LinearLayout
+
+
+        android:padding="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/notificationtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/notifications_active"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="@dimen/padd_10"
+            android:text="Notifications"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/nothingfound"
+        android:visibility="gone"
+        android:src="@drawable/search_error"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/logout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/notificationtxt"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <Button
+
+        android:visibility="gone"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:text="Logout"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_shadow"
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+</RelativeLayout>
